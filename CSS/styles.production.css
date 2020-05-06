@@ -1,8 +1,13 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -32,14 +37,14 @@ body {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -97,7 +102,10 @@ button {
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   opacity: 0.8;
   font-size: 18px;
@@ -116,7 +124,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin: 0 auto;
 }
 
-/* Grid fallback*/
+/* Grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
@@ -131,7 +139,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .grid__item {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   width: auto;
 }
 
@@ -167,8 +175,8 @@ button:hover, button:focus, .button:hover, .button:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -231,70 +239,70 @@ h1 {
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @-webkit-keyframes window-change {
   0% {
-    fill: #67C2E2;
+    fill: #67c2e2;
   }
 
   50% {
@@ -302,13 +310,13 @@ h1 {
   }
 
   100% {
-    fill: #67C2E2;
+    fill: #67c2e2;
   }
 }
 
 @keyframes window-change {
   0% {
-    fill: #67C2E2;
+    fill: #67c2e2;
   }
 
   50% {
@@ -316,18 +324,18 @@ h1 {
   }
 
   100% {
-    fill: #67C2E2;
+    fill: #67c2e2;
   }
 }
 
 .building__windows {
   -webkit-animation: 3s window-change infinite alternate linear;
-          animation: 3s window-change infinite alternate linear;
+  animation: 3s window-change infinite alternate linear;
 }
 
 @-webkit-keyframes grass-change {
   0% {
-    fill: #B5CE6F
+    fill: #b5ce6f;
   }
 
   50% {
@@ -335,13 +343,13 @@ h1 {
   }
 
   100% {
-    fill: #DEB887
+    fill: #deb887;
   }
 }
 
 @keyframes grass-change {
   0% {
-    fill: #B5CE6F
+    fill: #b5ce6f;
   }
 
   50% {
@@ -349,11 +357,11 @@ h1 {
   }
 
   100% {
-    fill: #DEB887
+    fill: #deb887;
   }
 }
 
 .building__grass {
   -webkit-animation: 4s grass-change infinite alternate linear;
-          animation: 4s grass-change infinite alternate linear;
+  animation: 4s grass-change infinite alternate linear;
 }
