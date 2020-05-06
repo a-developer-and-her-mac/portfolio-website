@@ -1,12 +1,12 @@
 :root {
-  --black: #000000;
+  --black: #000;
   --primary-color: #827397;
   --secondary-color: #d8b9c3;
   --font-family: "Maven Pro";
   --visited-link-color: #301934;
   --active-link-color: #4d4c7d;
   --button-color: white;
-  --grid-background-color: #D3D3D3;
+  --grid-background-color: #d3d3d3;
 }
 
 * {
@@ -57,7 +57,8 @@ a:visited {
   color: var(--visited-link-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   color: var(--secondary-color);
 }
@@ -66,7 +67,8 @@ a:active {
   color: var(active-link-color);
 }
 
-button, .button {
+button,
+.button {
   border: none;
   font-family: var(--font-family);
   background-color: var(--primary-color);
@@ -78,7 +80,10 @@ button, .button {
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   opacity: 0.8;
   font-size: 18px;
@@ -97,7 +102,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin: 0 auto;
 }
 
-/* Grid fallback*/
+/* Grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
@@ -218,7 +223,7 @@ h1 {
 
 @keyframes window-change {
   0% {
-    fill: #67C2E2;
+    fill: #67c2e2;
   }
 
   50% {
@@ -226,7 +231,7 @@ h1 {
   }
 
   100% {
-    fill: #67C2E2;
+    fill: #67c2e2;
   }
 }
 
@@ -236,7 +241,7 @@ h1 {
 
 @keyframes grass-change {
   0% {
-    fill: #B5CE6F
+    fill: #b5ce6f;
   }
 
   50% {
@@ -244,7 +249,7 @@ h1 {
   }
 
   100% {
-    fill: #DEB887
+    fill: #deb887;
   }
 }
 
