@@ -81,6 +81,7 @@ button:focus,
 
 .navigation-list {
   list-style-type: none;
+  padding: 55px;
 }
 
 .navigation-list li {
@@ -94,7 +95,6 @@ button:focus,
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 1px solid #827397;
 }
 
 .page-header__item {
@@ -125,6 +125,7 @@ button:focus,
 .profile {
   max-width: 700px;
   margin: 0 auto;
+  padding: 5%;
 }
 
 /* Grid fallback */
