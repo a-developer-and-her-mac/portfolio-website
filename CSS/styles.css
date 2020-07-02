@@ -171,6 +171,19 @@ button:focus,
 
 .contact__section {
   text-align: center;
+  padding: 20px;
+}
+
+.inputs,
+.input-message {
+  width: 50%;
+  padding: 12px 20px;
+  margin: auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .page-footer {
