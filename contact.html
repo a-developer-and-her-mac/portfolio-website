@@ -1,77 +1,118 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Anna Cobb</title>
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/styles.production.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Anna Cobb</title>
-  <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="CSS/styles.production.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="favicon_io/site.webmanifest">
-</head>
+  <body>
+    <header class="page-header">
+      <img
+        src="img/site-logo.svg"
+        alt=" Anna Cobb logo"
+        class="page-header__item"
+      />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">
+              Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">
+              About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+            >
+              Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">
+              Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contact__section">
+      <h1>Contact</h1>
 
-<body>
+      <div>
+        <a href="mailto:annagracecobb@gmail.com">annagracecobb @ gmail.com</a>
+      </div>
 
-  <header class="page-header">
-    <img src="img/site-logo.svg" alt=" Anna Cobb logo" class="page-header__item ">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item">
-            Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">
-            About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">
-            Contact</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">
-            Work</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <section class="contact__section">
-    <h1>Contact</h1>
+      <br /><br />
+      <form action="" method="post" id="contact-form">
+        <label class="standard-label" for="contact-email"> Email: </label>
+        <input type="email" id="contact-email" class="inputs" required />
 
-    <div>
-      <a href="mailto:annagracecobb@gmail.com">annagracecobb @ gmail.com</a>
-    </div>
+        <label class="standard-label" for="contact-number"> Telephone: </label>
+        <input
+          type="tel"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+          id="contact-number"
+          class="inputs"
+        />
 
-    <br><br>
-    <form action="" method="post" id="contact-form">
-      <label class="standard-label" for="contact-email"> Email: </label>
-      <input type="email" id="contact-email" class="inputs" required>
+        <label class="standard-label" for="message"> Message: </label>
+        <textarea
+          maxlength="240"
+          id="message"
+          class="input-message"
+          required
+        ></textarea>
 
-      <label class="standard-label" for="contact-number"> Telephone: </label>
-      <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-number" class="inputs">
+        <input
+          type="submit"
+          value="Send Message"
+          class="button button.contact"
+        />
+      </form>
+    </section>
 
-      <label class="standard-label" for="message"> Message: </label>
-      <textarea maxlength="240" id="message" class="input-message" required></textarea>
-
-      <input type="submit" value="Send Message" class="button">
-    </form>
-  </section>
-
-  <footer class="page-footer">
-    <div class="social-media">
-      <p>Find me on</p>
-      <!-- Github logo -->
-      <a href="https://github.com/a-developer-and-her-mac"><img src="img/github_icon.svg" alt="github link"></a>
-      <!-- LinkedIn logo -->
-      <!--  <a href="https://www.linkedin.com/"><img src="img/linkedin_icon.svg" alt="linkedin link"></a>
-      -->
-    </div>
-  </footer>
-  <script src="script.js/tota11y.min.js"></script>
-</body>
-
+    <footer class="page-footer">
+      <div class="social-media">
+        <p>Find me on</p>
+        <!-- Github logo -->
+        <a href="https://github.com/a-developer-and-her-mac"
+          ><img src="img/github_icon.svg" alt="github link"
+        /></a>
+        <!-- LinkedIn logo -->
+        <!--  <a href="https://www.linkedin.com/"><img src="img/linkedin_icon.svg" alt="linkedin link"></a>
+      --></div>
+    </footer>
+    <script src="script.js/tota11y.min.js"></script>
+  </body>
 </html>
