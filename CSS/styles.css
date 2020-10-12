@@ -61,7 +61,6 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
-  font-size: 18px;
 }
 
 .navigation-list {
@@ -94,17 +93,16 @@ button:focus,
 }
 
 .profile__portrait {
-  float: left;
   width: 250px;
-  margin-right: 40px;
   height: auto;
   border-radius: 50%;
 }
 
 .profile {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Grid fallback */
