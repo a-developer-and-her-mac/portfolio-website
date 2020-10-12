@@ -192,6 +192,11 @@ button:focus,
 
 /* end grid */
 
+.movie-img,
+.quiz-img {
+  width: 80%;
+}
+
 .projectlist__title {
   text-align: center;
 }
