@@ -155,7 +155,8 @@ button:focus,
 /* end grid */
 
 .movie-img,
-.quiz-img {
+.quiz-img,
+.todo-img {
   width: 80%;
 }
 
