@@ -210,8 +210,10 @@ button:focus {
 
 .movie-img,
 .quiz-img,
-.todo-img {
+.todo-img,
+.meet-img {
   width: 80%;
+  margin-left: 10%;
 }
 
 .projectlist__title {
