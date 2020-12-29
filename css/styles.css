@@ -6,7 +6,7 @@
   --visited-link-color: #301934;
   --active-link-color: #4d4c7d;
   --button-color: white;
-  --grid-background-color: #d3d3d3;
+  --grid-background-color: #827397;
 }
 
 * {
@@ -106,13 +106,13 @@ button:focus,
   align-items: center;
 }
 
+.project-title {
+  text-align: center;
+}
+
 /* Grid fallback */
 
 /* grid */
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
 
 .grid {
   display: grid;

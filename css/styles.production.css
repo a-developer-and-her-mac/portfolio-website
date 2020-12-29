@@ -152,13 +152,13 @@ button:focus {
           align-items: center;
 }
 
+.project-title {
+  text-align: center;
+}
+
 /* Grid fallback */
 
 /* grid */
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
 
 .grid {
   display: -ms-grid;
@@ -169,7 +169,7 @@ button:focus {
 }
 
 .grid__item {
-  background-color: #d3d3d3;
+  background-color: #827397;
   width: auto;
 }
 
