@@ -57,7 +57,7 @@ button:focus,
 .button:focus {
   cursor: pointer;
   color: var(--button-color);
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px #464646;
 }
 
 .navigation-list {
