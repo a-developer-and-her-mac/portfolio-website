@@ -69,26 +69,30 @@ button {
 
 button:hover {
   cursor: pointer;
-  opacity: 0.8;
   color: white;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 button:focus {
   cursor: pointer;
-  opacity: 0.8;
   color: white;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 .button:hover {
   cursor: pointer;
-  opacity: 0.8;
   color: white;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 .button:focus {
   cursor: pointer;
-  opacity: 0.8;
   color: white;
+  -webkit-box-shadow: 10px 5px 5px black;
+          box-shadow: 10px 5px 5px black;
 }
 
 .navigation-list {
@@ -242,6 +246,10 @@ button:focus {
           box-sizing: border-box;
   text-align: center;
 }
+
+ input[type="submit"] {
+  margin-top: 10px;
+ }
 
 .page-footer {
   clear: both;
