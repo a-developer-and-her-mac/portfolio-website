@@ -121,14 +121,8 @@ button:focus,
 .grid__item {
   background-color: var(--grid-background-color);
   width: auto;
-  border: 3px solid var(--primary-color);
   border-radius: 20px;
   box-shadow: 10px 5px 5px var(--grid-shadow-color);
-}
-
-.grid__item:last-child {
-  grid-column: 3/3;
-  grid-row: 1/3;
 }
 
 .grid__item:last-child {
