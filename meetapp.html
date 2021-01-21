@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meet App Case Study</title>
+    <meta name="description" content="Anna Cobb || Contact me">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a href="index.html">
+        <img
+          src="img/site-logo.svg"
+          alt=" Anna Cobb logo"
+          class="page-header__item"
+        />
+      </a>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">
+              Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">
+              About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+            >
+              Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">
+              Work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="casestudy__section">
+      <h1 class="casestudy__title">Case Study for Meet Project</h1>
+      <img src="img/meet_github.png" alt="picture of github page" class="case-study-img">
+      <h2>Overview</h2>
+      <p>
+          Meet is a progressive web app, developed using React,
+          serverless functions, and the google calendar api, that
+          provides users with the ability to view information about
+          upcoming events. Users can filter events by city and/or number,
+          and can also click on an event to see more details.
+      </p>
+      <h2>Purpose & Context</h2>
+      <p>
+         Meet was a personal project I built as part of the web development
+         course at CareerFoundry, to demonstrate my knowledge of Javascript development.
+      </p>
+      <h2>Objective</h2>
+      <p>
+        The goal of the project was to obtain a full-stack project
+        that I could add to my portfolio. The problem that I desired
+        to solve was to build a progressive web application, initially
+        following a TDD approach.
+      </p>
+      <h2>Approach</h2>
+      <h3>Server-Side</h3>
+      <p>
+        Concerning the server side of it, instead of using a traditional server,
+        I made use of AWS lambda functions to create an authorization server.
+        Using the authorization from this server, users would then be able to
+        make requests to the Google Calendar API to get upcoming events.
+      </p>
+      <img src="img/meet_code.png" alt="picture of code" class="case-study-img">
+      <h3>Client-Side</h3>
+      <p>
+        After completing the backend work, I then began to build the client-side.
+        It is a progressive web application, build with React. It provides one main
+        view, where users can see a list of upcoming events and click on each event
+        to see more detail, such as time, location, etc. The list of events can also
+        be filtered by number, or by which city the user selects.
+      </p>
+      <h2>Challenges</h2>
+      <p>
+        This proved to be one of my favorite projects of the course. At that point,
+        not only was I more comfortable with using the terminal, I was also a bit more
+        comfortable with React and development in general. However, I did face some challenges
+        with the app verification, and ended up needing to resolve a cors error.
+        Concerning the app verification, one challenge was that because the project made use of
+        Google OAuth, it showed a warning screen because the app wasn’t completely verified. While
+        originally the curriculum didn’t discuss it, it was finally updated to address the issue.
+        After finally understanding the issue, and reading through their explanation on what was
+        needed to fix it, I made the decision to leave it alone for the time being. My reasoning
+        for this decision was that as the fix would change the original direction I had in mind for
+        the project, and as the fix was considered optional for the course, it would be best to not
+        pursue it at that time.
+      </p>
+      <p>
+        Concerning the cors error, that one proved to have a different cause
+        then I first thought. After reading through countless articles and StackOverflow posts, and
+        discussing it with students, my mentor, and tutor alike, I finally grasped the cause for the
+        error. It ended up only being an issue with the endpoint to get the necessary token in my test
+        file, (and perhaps an issue with the authentication code), but along the way to that solution I
+        read a lot about Lambda Functions, errors with the AWS api gateway, HTML encoding, etc. I also
+        gained an entirely new appreciation for StackOverflow.
+      </p>
+      <h2>Duration</h2>
+      <p>
+        The development of the application took a little bit longer than initially planned, due to issues
+        with google app verification, cors, etc.
+      </p>
+      <h2>Credits</h2>
+      <p>
+        Role: Lead Developer
+        <br>
+        Tutor: Shan Gardezi
+        <br>
+        Mentor: Alexis Gormley
+      </p>
+    </section>
+
+    <footer class="page-footer">
+      <div class="social-media">
+        <p>Find me on</p>
+        <!-- Github logo -->
+        <a href="https://github.com/a-developer-and-her-mac"
+          ><img src="img/github_icon.svg" alt="github link"
+        /></a>
+        <!-- LinkedIn logo -->
+        <!--  <a href="https://www.linkedin.com/"><img src="img/linkedin_icon.svg" alt="linkedin link"></a>
+      --></div>
+    </footer>
+    <script src="script.js/tota11y.min.js"></script>
+  </body>
+</html>
