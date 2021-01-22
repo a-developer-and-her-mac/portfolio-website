@@ -182,6 +182,12 @@ button:focus {
   grid-row: auto / auto;
 }
 
+.grid__item > a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
