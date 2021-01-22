@@ -133,7 +133,7 @@ button:focus {
 .profile__portrait {
   width: 250px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .profile {
