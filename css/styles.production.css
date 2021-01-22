@@ -225,8 +225,17 @@ button:focus {
   max-width: 80%;
 }
 
-.casestudy__section > h1, h2, h3 {
-  text-align: center;
+.casestudy__section {
+text-align: center;
+padding: 20px;
+background-color: #f9f9f9;
+width: auto;
+border-radius: 20px;
+-webkit-box-shadow: 10px 5px 5px #D3D3D3;
+box-shadow: 10px 5px 5px #D3D3D3;
+margin: 10%;
+margin-top: 10%;
+margin-top: 0;
 }
 
 .about__section {
