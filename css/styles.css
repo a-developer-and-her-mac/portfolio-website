@@ -136,6 +136,11 @@ button:focus,
   margin-right: 10px;
 }
 
+.grid__item > p, .grid__item > h3 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
