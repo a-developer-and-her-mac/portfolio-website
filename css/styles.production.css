@@ -234,6 +234,10 @@ button:focus {
   font-size: 24px;
 }
 
+.skills-title {
+  font-weight: bold;
+}
+
 .case-study-img {
   display: block;
   margin-left: auto;
