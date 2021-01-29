@@ -175,6 +175,7 @@ button:focus {
   border-radius: 20px;
   -webkit-box-shadow: 10px 5px 5px #D3D3D3;
           box-shadow: 10px 5px 5px #D3D3D3;
+  position: relative;
 }
 
 .grid__item:last-child {
