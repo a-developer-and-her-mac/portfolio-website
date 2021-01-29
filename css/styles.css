@@ -123,6 +123,7 @@ button:focus,
   width: auto;
   border-radius: 20px;
   box-shadow: 10px 5px 5px var(--grid-shadow-color);
+  position: relative;
 }
 
 .grid__item:last-child {
