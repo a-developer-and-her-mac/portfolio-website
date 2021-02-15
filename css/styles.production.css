@@ -152,6 +152,50 @@ button:focus {
           align-items: center;
 }
 
+.hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:hover, .hamburger:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 3px;
+  background-color:#827397;
+  margin: 6px 0;
+}
+/*
+@media screen and (max-width: 767px) {
+  img.page-header__item {
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+  }
+
+  .navigation-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navigation-list.show {
+    display: flex;
+  }
+
+  .hamburger {
+   display: block;
+   margin-left: 80%;
+  }
+}
+*/
+
 .project-title {
   text-align: center;
   font-size: 22px;
