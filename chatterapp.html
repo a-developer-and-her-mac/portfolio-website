@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatter App Case Study</title>
+    <meta name="description" content="Anna Cobb || Contact me">
+    <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="css/styles.production.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link 
+      rel="manifest" 
+      href="favicon_io/site.webmanifest" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a href="index.html">
+        <img
+          src="img/site-logo.svg"
+          alt=" Anna Cobb logo"
+          class="page-header__item"
+        />
+      </a>
+      <nav class="main-navigation page-header__item">
+        <button class="hamburger" id="hamburger">
+          <div class="hamburger-menu" id="hamburger-menu"></div>
+          <div class="hamburger-menu" id="hamburger-menu"></div>
+          <div class="hamburger-menu" id="hamburger-menu"></div> 
+        </button>
+        <ul role="menubar" class="navigation-list" id="navigation-list">
+          <li role="presentation">
+            <a 
+              href="index.html" 
+              role="menuitem" 
+              class="navigation-list__item">
+              Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a 
+              href="work.html" 
+              role="menuitem" 
+              class="navigation-list__item navigation-list__item--active">
+              Work
+            </a>
+          </li>
+          <li role="presentation">
+            <a 
+              href="about.html" 
+              role="menuitem" 
+              class="navigation-list__item">
+              About Me
+            </a>
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="casestudy__section">
+      <h1 class="casestudy__title">Case Study for Chatter Project</h1>
+      <img src="img/chat_app.png" alt="picture of chat app screen" class="case-study-img">
+      <h2>Overview</h2>
+      <p>
+        Chatter is a mobile app, developed using React Native and the
+        Gifted Chat Library, that provides users with the ability to
+        choose a username, pick a background color, and enter a chat
+        where they send images, their location, etc.
+      </p>
+      <h2>Purpose & Context</h2>
+      <p>
+        Chatter was a personal project I built as part of the web development
+        course at CareerFoundry, to demonstrate my knowledge of React Native. 
+      </p>
+      <h2>Objective</h2>
+      <p>
+        The goal of the project was to obtain a mobile application that I could
+        add to my portfolio. The problem that I desired to solve was to build a
+        mobile application, using React Native and the Gifted Chat Library. 
+      </p>
+      <h2>Approach</h2>
+      <h3>Server-Side</h3>
+      <p>
+        Concerning the server side of it, I used Google FireStore to store
+        messages, images, and location.
+      </p>
+      <img src="img/chatter_code.png" alt="picture of code" class="case-study-img">
+      <h3>Client-Side</h3>
+      <p>
+        The client side is built with React Native. It provides two views,
+        the first being the screen where users pick their username and
+        background color, and the second being the actual chat screen.
+        In the chat, users can send text, images, or location. 
+      </p>
+      <h2>Challenges</h2>
+      <p>
+        This proved to be one of the less challenging projects of the course.
+        However, I did face some challenges getting it all working right. One
+        challenge was that while testing the sending of the user location, for
+        some reason I kept getting one particular error, and it refused to send
+        the location. Eventually, after a lot of googling of the error, and after
+        a lot of frustration, another student helped set me aright as to the cause
+        of the error. Turned out, that when trying to send the location, because
+        there was no text being sent, it would mess it up. To fix it, I had to make
+        sure that if there was no text being sent, it just added an empty string.
+        One thing that I learned from this experience is that, in the end, you just
+        need to really read the error message. I discovered this because after the
+        student pointed the problem out, I went back and read the error message more
+        carefully, only to discover that it pretty much did actually describe what
+        the error was. 
+      </p>
+      <h2>Duration</h2>
+      <p>
+        The development of the application took about the time expected, as everything
+        went pretty much on schedule. 
+      </p>
+      <h2>Credits</h2>
+      <p>
+        Role: Lead Developer
+        <br>
+        Tutor: Shan Gardezi
+        <br>
+        Mentor: Alexis Gormley
+      </p>
+    </section>
+
+    <footer class="page-footer">
+      <div class="social-media">
+        <p>Find me on</p>
+        <!-- Github logo -->
+        <a 
+          href="https://github.com/a-developer-and-her-mac" 
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="img/github.svg" alt="github link"/>
+        </a>
+        <!-- LinkedIn logo -->
+        <a 
+          href="https://www.linkedin.com/in/anna-cobb-09b805205/" 
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="img/linkedin_icon.svg" alt="linkedin link">
+        </a>
+      </div>
+    </footer>
+    <script src="scripts/tota11y.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
