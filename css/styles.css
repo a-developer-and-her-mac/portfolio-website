@@ -211,7 +211,8 @@ button:focus,
 .movie-img,
 .quiz-img,
 .todo-img,
-.meet-img {
+.meet-img,
+.irish-whistle-img {
   width: 80%;
   margin-left: 10%;
 }
