@@ -4,19 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Irish Whistle Project Case Study</title>
-    <meta name="description" content="Anna Cobb || Contact me">
-    <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="css/normalize.css" />
+    <meta name="description" content="Anna Cobb || Contact me" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
       rel="stylesheet"
     />
-    <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="css/styles.production.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -34,9 +32,7 @@
       sizes="16x16"
       href="favicon_io/favicon-16x16.png"
     />
-    <link 
-      rel="manifest" 
-      href="favicon_io/site.webmanifest" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
   </head>
 
   <body>
@@ -52,30 +48,25 @@
         <button class="hamburger" id="hamburger">
           <div class="hamburger-menu" id="hamburger-menu"></div>
           <div class="hamburger-menu" id="hamburger-menu"></div>
-          <div class="hamburger-menu" id="hamburger-menu"></div> 
+          <div class="hamburger-menu" id="hamburger-menu"></div>
         </button>
         <ul role="menubar" class="navigation-list" id="navigation-list">
           <li role="presentation">
-            <a 
-              href="index.html" 
-              role="menuitem" 
-              class="navigation-list__item">
+            <a href="index.html" role="menuitem" class="navigation-list__item">
               Home
             </a>
           </li>
           <li role="presentation">
-            <a 
-              href="work.html" 
-              role="menuitem" 
-              class="navigation-list__item navigation-list__item--active">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+            >
               Work
             </a>
           </li>
           <li role="presentation">
-            <a 
-              href="about.html" 
-              role="menuitem" 
-              class="navigation-list__item">
+            <a href="about.html" role="menuitem" class="navigation-list__item">
               About Me
             </a>
           </li>
@@ -93,78 +84,91 @@
     </header>
     <section class="casestudy__section">
       <h1 class="casestudy__title">Case Study for Irish Whistle Project</h1>
-      <img src="img/irish_whistle_site.png" alt="picture of irish whistle site" class="case-study-img">
+      <img
+        src="img/irish_whistle_site.png"
+        alt="picture of irish whistle site"
+        class="case-study-img"
+      />
       <h2>Overview</h2>
       <p>
-        Irish Whistles is a simple website, built using humble HTML, CSS, a bit of
-        Bootstrap to smooth out the rough bits, and JavaScript. It provides users
-        with the opportunity of reading a bit about the instrument, the irish low whistle. 
+        Irish Whistles is a simple website, built using humble HTML, CSS, a bit
+        of Bootstrap to smooth out the rough bits, and JavaScript. It provides
+        users with the opportunity of reading a bit about the instrument, the
+        irish low whistle.
       </p>
       <h2>Purpose & Context</h2>
       <p>
-        Irish Whistles was a personal project I built on the side, to further test my
-        knowledge, and to also demonstrate one of my own side hobbies. 
+        Irish Whistles was a personal project I built on the side, to further
+        test my knowledge, and to also demonstrate one of my own side hobbies.
       </p>
       <h2>Objective</h2>
       <p>
-        The goal of the project was to obtain another small project to add 
-        to my portfolio. The problem I desired to solve was to build a simple website, 
-        using the above mentioned technologies, that not only showcased the instrument, 
-        but also could be viewed in dark mode. 
+        The goal of the project was to obtain another small project to add to my
+        portfolio. The problem I desired to solve was to build a simple website,
+        using the above mentioned technologies, that not only showcased the
+        instrument, but also could be viewed in dark mode.
       </p>
       <h2>Approach</h2>
-      <img src="img/irishwhistlecode.png" alt="picture of code" class="case-study-img">
+      <img
+        src="img/irishwhistlecode.png"
+        alt="picture of code"
+        class="case-study-img"
+      />
       <h3>Client-Side</h3>
       <p>
-        The client side is built with simple HTML, CSS, JS, and Bootstrap. 
-        It provides one main page, that contains headings and their corresponding paragraphs 
-        and images. I desired to add dark mode to this site, and so I built that from scratch, 
-        using only simple JS to wire up a toggle button with the CSS to invert the color scheme. Also, 
-        as part of the project planning, I only wanted a menu to appear on mobile, to help guide users
-        to the correct paragraphs when their screen size is smaller. To build the mobile menu and hide it
-        on desktop, I used the CSS "display: none" property in conjunction with media queries. 
+        The client side is built with simple HTML, CSS, JS, and Bootstrap. It
+        provides one main page, that contains headings and their corresponding
+        paragraphs and images. I desired to add dark mode to this site, and so I
+        built that from scratch, using only simple JS to wire up a toggle button
+        with the CSS to invert the color scheme. Also, as part of the project
+        planning, I only wanted a menu to appear on mobile, to help guide users
+        to the correct paragraphs when their screen size is smaller. To build
+        the mobile menu and hide it on desktop, I used the CSS "display: none"
+        property in conjunction with media queries.
       </p>
       <h2>Challenges</h2>
       <p>
-        This project proved to be fairly simple, however, I did run into a few unexpected issues 
-        and quirks. One of these was that when toggled to dark mode, on mobile, the little hamburger
-        menu wasn't displaying correctly. I knew this was probably because I was using document.querySelector
-        in the JS to grab the menu, and since I was using mutiple divs to build the menu, it wasn't grabbing
-        them all correctly. I knew that if I tried to use document.querySelectorAll, it wouldn't display at all,
-        because when you use that method it returns a node list, not an array, and it doesn't work the same. 
-        Eventually however, with the help of StackOverflow, I figured out a solution. I added a for loop, so that
-        when using document.querySelectorAll it would toggle the class I wanted on each div in the list. 
-      
+        This project proved to be fairly simple, however, I did run into a few
+        unexpected issues and quirks. One of these was that when toggled to dark
+        mode, on mobile, the little hamburger menu wasn't displaying correctly.
+        I knew this was probably because I was using document.querySelector in
+        the JS to grab the menu, and since I was using mutiple divs to build the
+        menu, it wasn't grabbing them all correctly. I knew that if I tried to
+        use document.querySelectorAll, it wouldn't display at all, because when
+        you use that method it returns a node list, not an array, and it doesn't
+        work the same. Eventually however, with the help of StackOverflow, I
+        figured out a solution. I added a for loop, so that when using
+        document.querySelectorAll it would toggle the class I wanted on each div
+        in the list.
       </p>
       <h2>Duration</h2>
       <p>
-        The development of the application took about the time expected, perhaps a 
-        little slower than I first imagined it to be, because of the above mentioned challenges.
+        The development of the application took about the time expected, perhaps
+        a little slower than I first imagined it to be, because of the above
+        mentioned challenges.
       </p>
       <h2>Credits</h2>
-      <p>
-        Role: Lead Developer
-      </p>
+      <p>Role: Lead Developer</p>
     </section>
 
     <footer class="page-footer">
       <div class="social-media">
         <p>Find me on</p>
         <!-- Github logo -->
-        <a 
-          href="https://github.com/a-developer-and-her-mac" 
+        <a
+          href="https://github.com/a-developer-and-her-mac"
           target="_blank"
           rel="noopener"
         >
-          <img src="img/github.svg" alt="github link"/>
+          <img src="img/github.svg" alt="github link" />
         </a>
         <!-- LinkedIn logo -->
-        <a 
-          href="https://www.linkedin.com/in/anna-cobb-09b805205/" 
+        <a
+          href="https://www.linkedin.com/in/anna-cobb-09b805205/"
           target="_blank"
           rel="noopener"
         >
-          <img src="img/linkedin_icon.svg" alt="linkedin link">
+          <img src="img/linkedin_icon.svg" alt="linkedin link" />
         </a>
       </div>
     </footer>
