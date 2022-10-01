@@ -4,19 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Anna Cobb</title>
-    <meta name="description" content="Anna Cobb || Web Developer">
-    <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="css/normalize.css" />
+    <meta name="description" content="Anna Cobb || Web Developer" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
       rel="stylesheet"
     />
-    <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="css/styles.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -34,25 +28,24 @@
       sizes="16x16"
       href="favicon_io/favicon-16x16.png"
     />
-    <link 
-      rel="manifest" 
-      href="favicon_io/site.webmanifest" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
   </head>
 
   <body>
     <header class="page-header">
       <a href="index.html">
         <img
-          src="img/site-logo.svg"
+          id="logo"
+          src="img/logo.svg"
           alt=" Anna Cobb logo"
-          class="page-header__item"
+          class="page-header__item svg"
         />
       </a>
       <nav class="main-navigation page-header__item">
-       <button class="hamburger" id="hamburger">
+        <button class="hamburger" id="hamburger">
           <div class="hamburger-menu" id="hamburger-menu"></div>
           <div class="hamburger-menu" id="hamburger-menu"></div>
-          <div class="hamburger-menu" id="hamburger-menu"></div> 
+          <div class="hamburger-menu" id="hamburger-menu"></div>
         </button>
         <ul role="menubar" class="navigation-list" id="navigation-list">
           <li role="presentation">
@@ -65,18 +58,12 @@
             </a>
           </li>
           <li role="presentation">
-            <a 
-              href="work.html" 
-              role="menuitem" 
-              class="navigation-list__item">
+            <a href="work.html" role="menuitem" class="navigation-list__item">
               Work
             </a>
           </li>
           <li role="presentation">
-            <a 
-              href="about.html" 
-              role="menuitem" 
-              class="navigation-list__item">
+            <a href="about.html" role="menuitem" class="navigation-list__item">
               About Me
             </a>
           </li>
@@ -87,18 +74,17 @@
               class="navigation-list__item"
             >
               Contact
-              </a>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <div class="profile">
       <h1>Hello, I'm Anna.</h1>
-      <p>I'm what you would call a web developer, with an eye for efficiency
-        <br>
-         and clean code. Proficient in technologies such as JavaScript, HTML,
-         <br>
-         and CSS.
+      <p>
+        I'm what you would call a web developer, with an eye for efficiency and
+        clean code. Proficient in technologies such as JavaScript, HTML, and
+        CSS.
       </p>
       <a href="work.html" class="button">Click here to see my work</a>
     </div>
@@ -106,20 +92,20 @@
       <div class="social-media">
         <p>Find me on</p>
         <!-- Github logo -->
-        <a 
-          href="https://github.com/a-developer-and-her-mac" 
+        <a
+          href="https://github.com/a-developer-and-her-mac"
           target="_blank"
           rel="noopener"
         >
-          <img src="img/github.svg" alt="github link"/>
+          <img src="img/github.svg" alt="github link" class="svg" />
         </a>
         <!-- LinkedIn logo -->
-        <a 
-          href="https://www.linkedin.com/in/anna-cobb-09b805205/" 
+        <a
+          href="https://www.linkedin.com/in/anna-cobb-09b805205/"
           target="_blank"
           rel="noopener"
         >
-          <img src="img/linkedin_icon.svg" alt="linkedin link">
+          <img src="img/linkedin_icon.svg" alt="linkedin link" class="svg" />
         </a>
       </div>
     </footer>

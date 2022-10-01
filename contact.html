@@ -4,19 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Anna Cobb</title>
-    <meta name="description" content="Anna Cobb || Contact me">
-    <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="css/normalize.css" />
+    <meta name="description" content="Anna Cobb || Contact me" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
       rel="stylesheet"
     />
-    <link 
-      rel="stylesheet" 
-      type="text/css" 
-      href="css/styles.production.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -34,48 +28,41 @@
       sizes="16x16"
       href="favicon_io/favicon-16x16.png"
     />
-    <link 
-      rel="manifest" 
-      href="favicon_io/site.webmanifest" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
   </head>
 
   <body>
     <header class="page-header">
       <a href="index.html">
         <img
-          src="img/site-logo.svg"
+          id="logo"
+          src="img/logo.svg"
           alt=" Anna Cobb logo"
-          class="page-header__item"
+          class="page-header__item svg"
         />
       </a>
+      <a href="index.html" id="home"
+        ><img src="img/house_icon.svg" class="svg"
+      /></a>
       <nav class="main-navigation page-header__item">
         <button class="hamburger" id="hamburger">
           <div class="hamburger-menu" id="hamburger-menu"></div>
           <div class="hamburger-menu" id="hamburger-menu"></div>
-          <div class="hamburger-menu" id="hamburger-menu"></div> 
+          <div class="hamburger-menu" id="hamburger-menu"></div>
         </button>
         <ul role="menubar" class="navigation-list" id="navigation-list">
           <li role="presentation">
-            <a 
-              href="index.html" 
-              role="menuitem" 
-              class="navigation-list__item">
+            <a href="index.html" role="menuitem" class="navigation-list__item">
               Home
-              </a>
+            </a>
           </li>
           <li role="presentation">
-            <a 
-              href="work.html" 
-              role="menuitem" 
-              class="navigation-list__item">
+            <a href="work.html" role="menuitem" class="navigation-list__item">
               Work
             </a>
           </li>
           <li role="presentation">
-            <a 
-              href="about.html" 
-              role="menuitem" 
-              class="navigation-list__item">
+            <a href="about.html" role="menuitem" class="navigation-list__item">
               About Me
             </a>
           </li>
@@ -92,35 +79,39 @@
       </nav>
     </header>
     <div class="contact-container">
-    <section class="contact__section">
-      <h1>Contact</h1>
+      <section class="contact__section">
+        <h1>Contact</h1>
 
-      <div>
-        <p>hello@anna.dev</p>
-      </div>
+        <div>
+          <p>hello@anna.dev</p>
+        </div>
 
-    <footer class="page-footer">
-      <div class="social-media">
-        <p>Find me on</p>
-        <!-- Github logo -->
-        <a 
-          href="https://github.com/a-developer-and-her-mac" 
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="img/github.svg" alt="github link"/>
-        </a>
-        <!-- LinkedIn logo -->
-        <a 
-          href="https://www.linkedin.com/in/anna-cobb-09b805205/" 
-          target="_blank"
-          rel="noopener"
-        >
-          <img src="img/linkedin_icon.svg" alt="linkedin link">
-        </a>
-      </div>
-    </footer>
-    </section>
+        <footer class="page-footer">
+          <div class="social-media">
+            <p>Find me on</p>
+            <!-- Github logo -->
+            <a
+              href="https://github.com/a-developer-and-her-mac"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="img/github.svg" alt="github link" class="svg" />
+            </a>
+            <!-- LinkedIn logo -->
+            <a
+              href="https://www.linkedin.com/in/anna-cobb-09b805205/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="img/linkedin_icon.svg"
+                alt="linkedin link"
+                class="svg"
+              />
+            </a>
+          </div>
+        </footer>
+      </section>
     </div>
     <script src="scripts/tota11y.min.js"></script>
     <script src="scripts/script.js"></script>
